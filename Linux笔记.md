@@ -293,7 +293,7 @@ ifconfig :network interfaces configuring 网络接口配置
 2. CentOS7 的运行级别简化为:
    - `multi-user.target` 等价于原运行级别 3（多用户有网，无图形界面）
    - `graphical.target`  等价于原运行级别 5（多用户有网，有图形界面）
-3.  查看当前运行级别
+3. 查看当前运行级别
    - `systemctl get-default`
 4. 修改当前运行级别
    - `systemctl set-default TARGET.target`    （这里 TARGET 取 multi-user 或者 graphical）
@@ -325,7 +325,14 @@ ifconfig :network interfaces configuring 网络接口配置
    - `poweroff`               （功能描述：关机，断电）
    - `reboot`                    （功能描述：就是重启，等同于 shutdown -r now）
    - `shutdown [选项] 时间`
-
+     | 选项 | 功能                |
+     | ---- | ------------------- |
+     | -H   | 相当于--halt ，停机 |
+     | -r   | -r=reboot 重启      |
+     | 参数 | 功能                               |
+     | ---- | ---------------------------------- |
+     | now  | 立刻关机                           |
+     | 时间 | 等待多久后关机（时间单位是分钟）。 |
 
 
 
