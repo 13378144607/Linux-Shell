@@ -340,27 +340,27 @@ ifconfig :network interfaces configuring 网络接口配置
 3. 案例实操
    - 将数据由内存同步到硬盘中
      ```shell
-     [root@hadoop100 桌面]#sync
+     sync
      ```
    - 重启
      ```shell
-     [root@hadoop100 桌面]# reboot
+     reboot
      ```
    - 停机（不断电）
      ```shell
-     [root@hadoop100 桌面]#halt
+     halt
      ```
    - 计算机将在 1 分钟后关机，并且会显示在登录用户的当前屏幕中
      ```shell
-     [root@hadoop100 桌面]#shutdown -h 1 ‘This server will shutdown after 1 mins’
+     shutdown -h 1 ‘This server will shutdown after 1 mins’
      ```
    - 立马关机（等同于 poweroff）
      ```shell
-     [root@hadoop100 桌面]# shutdown -h now
+     shutdown -h now
      ```
    - 系统立马重启（等同于 reboot）
      ```shell
-     [root@hadoop100 桌面]# shutdown -r now
+     shutdown -r now
      ```
 
 # 第七章 常用基本命令（重要）
