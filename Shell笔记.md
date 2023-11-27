@@ -1,5 +1,5 @@
 # 第一章 Shell概述
-- <img width="657" alt="image" src="https://github.com/13378144607/Linux-Shell/assets/131531888/f356759c-bfa9-488a-8ed2-f60e48c7742d">
+<img width="657" alt="image" src="https://github.com/13378144607/Linux-Shell/assets/131531888/f356759c-bfa9-488a-8ed2-f60e48c7742d">
 
 1. Linux 提供的 Shell 解析器有
    ```shell
@@ -26,16 +26,31 @@
 1. 脚本格式
    脚本以#!/bin/bash 开头（指定解析器）
 2. 第一个 Shell 脚本：helloworld.sh
-   2.1 需求：创建一个 Shell 脚本，输出 helloworld
-   2.2 案例实操
+   - 需求：创建一个 Shell 脚本，输出 helloworld
+   - 案例实操
      ```shell
      [atguigu@hadoop101 shells]$ touch helloworld.sh [atguigu@hadoop101 shells]$ vim helloworld.sh
      在 helloworld.sh 中输入如下内容
      #!/bin/bash
      echo "helloworld"
      ```
-    2.3 脚本的常用执行方式
-     第一种：采用 bash 或 sh+脚本的相对路径或绝对路径（不用赋予脚本+x 权限）
-
-
+    - 脚本的常用执行方式
+      1.第一种：采用 bash 或 sh+脚本的相对路径或绝对路径（不用赋予脚本+x 权限）
+     - sh+脚本的相对路径
+         ```shell
+         [atguigu@hadoop101 shells]$ sh ./helloworld.sh Helloworld
+         ```
+     - sh+脚本的绝对路径
+        ```shell
+        [atguigu@hadoop101 shells]$ sh /home/atguigu/shells/helloworld.sh helloworld
+        ```
+     - bash+脚本的相对路径
+       ```shell
+       [atguigu@hadoop101 shells]$ bash ./helloworld.sh Helloworld
+       ```
+    - bash+脚本的绝对路径
+      ```shell
+      [atguigu@hadoop101 shells]$ bash /home/atguigu/shells/helloworld.sh Helloworld
+      ```
+     2.第二种：采用输入脚本的绝对路径或相对路径执行脚本（必须具有可执行权限+x）
    
