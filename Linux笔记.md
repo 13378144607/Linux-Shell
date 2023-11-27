@@ -126,8 +126,10 @@ ifconfig :network interfaces configuring 网络接口配置
      #网关                                                                         
      GATEWAY=192.168.1.2                                            
      #域名解析器                                                                    
-     DNS1=192.168.1.2  
-   ![Uploading image.png…]()
+     DNS1=192.168.1.2
+   
+   ![image](https://github.com/13378144607/Linux-Shell/assets/131531888/fc0ea4ab-dd8b-437b-93b3-de18beb002be)
+
 
 
 
