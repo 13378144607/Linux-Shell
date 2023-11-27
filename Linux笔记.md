@@ -333,9 +333,37 @@ ifconfig :network interfaces configuring 网络接口配置
       | ---- | ---------------------------------- |
       | now  | 立刻关机                           |
       | 时间 | 等待多久后关机（时间单位是分钟）。 |
+2. 经验技巧
+  Linux 系统中为了提高磁盘的读写效率，对磁盘采取了 “ 预读迟写”操作方式。当用户 保存文件时，Linux 核心并不一定立即将保存数据写入物理磁盘中，而是将数据保存在缓 冲区中，等缓冲区满时再写入磁盘，这种方式可以极大的提高磁盘写入数据的效率。但是，
+也带来了安全隐患，如果数据还未写入磁盘时，系统掉电或者其他严重问题出现，则将导
+致数据丢失。使用 sync 指令可以立即将缓冲区的数据写入磁盘。
+3. 案例实操
+   - 将数据由内存同步到硬盘中
+     ```shell
+     [root@hadoop100 桌面]#sync
+     ```
+   - 重启
+     ```shell
+     [root@hadoop100 桌面]# reboot
+     ```
+   - 停机（不断电）
+     ```shell
+     [root@hadoop100 桌面]#halt
+     ```
+   - 计算机将在 1 分钟后关机，并且会显示在登录用户的当前屏幕中
+     ```shell
+     [root@hadoop100 桌面]#shutdown -h 1 ‘This server will shutdown after 1 mins’
+     ```
+   - 立马关机（等同于 poweroff）
+     ```shell
+     [root@hadoop100 桌面]# shutdown -h now
+     ```
+   - 系统立马重启（等同于 reboot）
+     ```shell
+     [root@hadoop100 桌面]# shutdown -r now
+     ```
 
-
-
+# 第七章 常用基本命令（重要）
 
 
 
