@@ -90,14 +90,10 @@ REPLACE』的字样，此时才可以进行编辑。而如果要回到一般模�
 ![image](https://github.com/13378144607/Linux-Shell/assets/131531888/114a082c-cd48-45cc-94b4-59c807c58713)
 # 第五章 网络配置（重点）
 ## 5.1 查看网路ip和网关
-1. 查看虚拟网络编辑器
-   ![image](https://github.com/13378144607/Linux-Shell/assets/131531888/e9fa50be-cac8-47cf-98ec-023a983203f2)
-2. 修改虚拟网卡ip
-   ![image](https://github.com/13378144607/Linux-Shell/assets/131531888/d94d771f-8822-4732-8a83-370a9031bbaf)
-3. 查看网关
-   ![image](https://github.com/13378144607/Linux-Shell/assets/131531888/3396019b-025b-4672-a82d-a830629cb44c)
-4. 查看 windows 环境的中 VMnet8 网络配置
-   ![image](https://github.com/13378144607/Linux-Shell/assets/131531888/a22b9f50-aa89-463e-ac6c-29ff80093688)
+1. 查看虚拟网络编辑器![image](https://github.com/13378144607/Linux-Shell/assets/131531888/e9fa50be-cac8-47cf-98ec-023a983203f2)
+2. 修改虚拟网卡ip![image](https://github.com/13378144607/Linux-Shell/assets/131531888/d94d771f-8822-4732-8a83-370a9031bbaf)
+3. 查看网关![image](https://github.com/13378144607/Linux-Shell/assets/131531888/3396019b-025b-4672-a82d-a830629cb44c)
+4. 查看 windows 环境的中 VMnet8 网络配置![image](https://github.com/13378144607/Linux-Shell/assets/131531888/a22b9f50-aa89-463e-ac6c-29ff80093688)
 ## 5.2 配置网络ip地址
 ### 5.2.1 ifconfig配置网络接口
 ifconfig :network interfaces configuring 网络接口配置
@@ -131,6 +127,7 @@ ifconfig :network interfaces configuring 网络接口配置
      GATEWAY=192.168.1.2                                            
      #域名解析器                                                                    
      DNS1=192.168.1.2  
+   ![Uploading image.png…]()
 
 
 
