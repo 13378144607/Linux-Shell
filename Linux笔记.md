@@ -330,6 +330,8 @@ ifconfig :network interfaces configuring 网络接口配置
    | -H   | 相当于--halt ，停机 |
    | -r   | -r=reboot 重启      |
 
+
+
    | 参数 | 功能                               |
    | ---- | ---------------------------------- |
    | now  | 立刻关机                           |
