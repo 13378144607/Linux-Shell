@@ -1,0 +1,12 @@
+				(前提是科学上网，应该是)
+
+1.首先确保拥有gcc-c++的环境，没有的话使用sudo yum -y install gcc-c++进行下载
+2.下载redis源代码wget https://github.com/redis/redis/archive/7.0.0.tar.gz
+3.解压源码tar -xzf 7.0.0.tar.gz
+4.进入源码目录cd redis-7.0.0
+5.进行编译 make && make install
+6.需要将redis-7.0.0移动到/opt里面
+7.在/下面mkdir一个myredis目录用于存放redis.conf配置文件
+8.在/opt/redis-7.0.0里面使用cp /opt/redis-7.0.0/redis.conf redis.conf.bak复制一个bak文件
+9.将bak文件移动到/myredis里面去，然后通过mv去掉bak后缀
+10.执行相应的配置设置
